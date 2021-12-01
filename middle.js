@@ -40,7 +40,7 @@ const assertArraysEqual = (actual, expected) => {
 
 const middle = function(array) {
   let result = [];
-  let midIndex = Math.floor(array.length / 2)
+  let midIndex = Math.floor(array.length / 2);
   if (array.length % 2 !== 0 && array.length > 2) {
     result.push(array[midIndex]);
   } else if (array.length % 2 === 0 && array.length > 2) {
