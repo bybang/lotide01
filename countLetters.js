@@ -8,6 +8,19 @@ const assertEqual = (actual, expected) => {
 };
 
 // countLetters Function
-const countLetters = () => {
-  
-}
+const countLetters = (sentence) => {
+  let result = {};
+  let noSpace = sentence.replace(/\s/g, '');
+  for (const letter of noSpace) {
+    if (result[letter]) {
+      result[letter] += 1;
+    } else {
+      result[letter] = 1;
+    }
+  }
+  return result;
+};
+
+// Test Case
+console.log(countLetters("LHL"));
+console.log(countLetters("lighthouse in the house"));
