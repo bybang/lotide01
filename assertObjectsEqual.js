@@ -33,7 +33,7 @@ const assertObjectsEqual = (actual, expected) => {
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
-}
+};
 
 // Test Code
 const ab = { a: "1", b: "2" };
